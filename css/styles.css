@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: rgb(238,47,105);
 }
 
 button {
@@ -18,7 +18,7 @@ button {
   margin: 1em;
 }
 
-.reset:hover {
+.reset-button:hover {
   background-color: #B2479A;
   border-top: 10px solid #CC7FB5;
   border-bottom: 10px solid #CC7FB5;
