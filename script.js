@@ -1,5 +1,5 @@
-var randomButton = document.querySelector('.random-button');
-var resetButton = document.querySelector('.reset-button');
+// var randomButton = document.querySelector('.random-button');
+// var resetButton = document.querySelector('.reset-button');
 var ranColor = colorRandom();
 // var resetColor = bkgdWhite();
 
@@ -8,7 +8,7 @@ function colorRandom() {
 }
 
 $('.random-button').on('click', function() {
-  $('body').css({'background-color': 'ranColor'});
+  $('body').css({'background-color': 'colorRandom()'});
 });
 
 
