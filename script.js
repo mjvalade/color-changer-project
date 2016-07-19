@@ -7,15 +7,17 @@ function colorRandom() {
   return 'rgb(' + (Math.floor(Math.random() * 254)) + ',' + (Math.floor(Math.random() * 254)) + ',' + (Math.floor(Math.random() * 254)) + ')';
 }
 
-// randomButton.addEventListener('click', function() {
-//   colorRandom();
+$('.random-button').on('click', function() {
+  $('body').css({'background-color': 'ranColor'});
+});
+
+
+// $('.list1').on('click', '.read-button', function () {
+//   $(this).parents('.bookmark').toggleClass("red");
+//   getTotalReadCount();
+//   getTotalUnreadCount();
 // });
 
-$('body').on('click', function() {
-  $(this).css('background-color', ranColor);
-})
-
-
-// $('body').on('click', '.reset' function() {
-//   $(this).css('background-color', 'white');
-// })
+$('.reset-button').on('click', function() {
+  $('body').css({'background-color': 'white'});
+});

@@ -2,14 +2,25 @@ body {
   background-color: rgb(238,47,105);
 }
 
+/*Container around buttons*/
+
+.container {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Button properties*/
+
 button {
+  height: 75px;
+  width: 25%;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   /*font-kerning: 5px;*/
   color: white;
   background-color: #E5B6D5;
-  height: 75px;
-  width: 30%;
   border-top: 10px solid #B2479A;
   border-bottom: 10px solid #B2479A;
   border-left: 10px solid #CC7FB5;
@@ -26,9 +37,20 @@ button {
   border-right: 10px solid #E5B6D5;
 }
 
+/*Media queries*/
+/*small screens*/
+@media screen and (max-width: 600px){
 .container {
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  height: 100px;
+  width: 70%;
+}
+
+.reset-button {
+  height: 60px;
+}
+
 }
